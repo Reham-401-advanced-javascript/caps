@@ -1,10 +1,10 @@
 'use strict';
 const events = require('./events');
 
-events.on('pickup', pickUp);
+events.on('pickup', pickup);
 
 
-function pickUp(payload){
+function pickup(payload){
   setTimeout(()=> {
     console.log(`DRIVER: picked up ${payload.orderId}`);
     events.emit('in-transit', payload);
@@ -15,4 +15,4 @@ function pickUp(payload){
   }, 3000);
 }
 
-module.exports = pickUp;
+module.exports = pickup;
