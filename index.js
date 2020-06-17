@@ -1,3 +1,3 @@
-require('./caps');
-require('./vendor');
-require('./driver');
+require('./caps/caps.js');
+require('./vendor/vendor.js');
+require('./driver/driver.js');

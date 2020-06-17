@@ -1,35 +1,40 @@
-# CAPS
-
-
-
-# LAB - Class 16:  CAPS
+# LAB - Class 17:  TCP Server / Message Application
 ### Author: Reham Omar AL-Sobh
 
-CAPS Phase 1: Begin the build of an application for a company called CAPS - The Code Academy Parcel Service. In this sprint, we’ll build out a system that emulates a real world supply chain. CAPS will simulate a delivery service where vendors (such a flower shops) will ship products using our delivery service and when our drivers deliver them, be notified that their customers received what they purchased.
+The Transmission Control Protocol (TCP) is widely used by application layer protocols in the Internet Protocol Suite. TCP creates a two way communication between two hosts and provides reliable, ordered, and error checked byte streams between the applications.
+
+In this class, we will be building a multiple-server event driven system, using TCP as our communication layer.
 
  ## Links and Resources
 
- - [submission PR/lab-16 ](https://github.com/Reham-401-advanced-javascript/caps/pull/1)
+ - [submission PR/lab-17 ](https://github.com/Reham-401-advanced-javascript/caps/pull/2)
  - [ci/cd ](https://github.com/Reham-401-advanced-javascript/caps/pull/1/checks?check_run_id=771389132)
 
+## Documentation
 
- ## Setup
+CAPS Phase 2: Continue working on a multi-day build of our delivery tracking system.
+
+In this lab, we’ll be moving away from a single application and creating separate applications for the drivers, stores, and a server that ties them all together.
+
+As you can imagine, in the CAPS system the Vendors and the Drivers will each be on different computers and can’t be using the same running application, so we’ll need a way to keep everything in sync over the network.
+
+## Setup
 
  `npm i jest eslint dotenv faker `
 
- #### .env requirements (where applicable)
+#### .env requirements (where applicable)
   i.e.
   `storeName`
 
-  ## How to initialize/run your application (where applicable)
+## How to initialize/run your application (where applicable)
    * `npm test`
    * `node index.js`
 
-  ## Tests
+## Tests
 
-  #### How do you run tests?
+#### How do you run tests?
   ` npm test` / `npm run lint`/`node index.js `
-  #### Any tests of note?
+#### Any tests of note?
    `jest --verbose --coverage`
 
 

@@ -1,8 +1,8 @@
 'use stritc';
-const events = require('../events');
-let logger = require('../caps');
-let pickup = require('../driver');
-let thanks = require('../vendor');
+const events = require('../events.js');
+let thanks = require('../vendor/vendor.js');
+let orderGenerator = require('../vendor/vendor.js');
+
 let consoleSpy = jest.spyOn(console, 'log').mockImplementation();
 describe('Event handlers tests', ()=> {
   let payload = {
@@ -13,7 +13,7 @@ describe('Event handlers tests', ()=> {
   };
  
   it('it call pickup', () => {
-    events.emit('pickup', payload);
+    orderGenerator();
     expect(consoleSpy).toHaveBeenCalled();
   });
   it('it call in-transit', () => {
@@ -21,11 +21,7 @@ describe('Event handlers tests', ()=> {
     expect(consoleSpy).toHaveBeenCalled();
   });
  
-  it('log using logger function in caps', ()=> {
-    logger(payload);
-    expect(consoleSpy).toHaveBeenCalled();
-  });
-
+  
   it('log using thanks function in vendor', ()=> {
     thanks();
     expect(consoleSpy).toHaveBeenCalled();
