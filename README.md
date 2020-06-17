@@ -8,7 +8,7 @@ In this class, we will be building a multiple-server event driven system, using 
  ## Links and Resources
 
  - [submission PR/lab-17 ](https://github.com/Reham-401-advanced-javascript/caps/pull/2)
- - [ci/cd ](https://github.com/Reham-401-advanced-javascript/caps/pull/1/checks?check_run_id=771389132)
+ - [ci/cd ](https://github.com/Reham-401-advanced-javascript/caps/actions?query=workflow%3ACI)
 
 ## Documentation
 
@@ -40,4 +40,4 @@ As you can imagine, in the CAPS system the Vendors and the Drivers will each be 
 
 ## UML
 
-[UML Diagrame ](assest/lab-16.jpg)
+[UML Diagrame ](assest/lab-17.jpg)
